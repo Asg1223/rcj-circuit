@@ -1,0 +1,8 @@
+# 教材用の KiCad プロジェクト（すべて架空の構成）
+# ここに書いたフォルダの KiCad ファイルだけが公開リポジトリに入れられる
+h1-led
+power
+main
+ir-ring
+motor
+kicker

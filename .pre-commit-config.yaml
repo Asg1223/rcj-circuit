@@ -1,0 +1,10 @@
+# コミット前に「うっかり公開チェック」を走らせる
+#   pip install pre-commit && pre-commit install
+repos:
+  - repo: local
+    hooks:
+      - id: check-public
+        name: うっかり公開チェック
+        entry: python tools/check_public.py
+        language: system
+        pass_filenames: true

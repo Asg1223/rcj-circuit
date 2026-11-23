@@ -1,0 +1,196 @@
+[project]
+site_name = "RCJ サッカーの電子回路設計"
+site_description = "ロボカップジュニア サッカー（インフラレッド）のロボットの電子回路を、KiCad で回路図から基板の発注まで設計できるようになるための教材"
+site_author = "Asg1223"
+site_url = "https://asg1223.github.io/rcj-circuit/"
+repo_url = "https://github.com/Asg1223/rcj-circuit"
+repo_name = "Asg1223/rcj-circuit"
+copyright = "Copyright &copy; 2026 Asg1223 — MIT License"
+
+nav = [
+  { "はじめに" = "index.md" },
+  { "第0部 はじめに" = [
+    "part0-intro/index.md",
+    "part0-intro/0-1-overview.md",
+    "part0-intro/0-2-rules.md",
+    "part0-intro/0-3-tools.md",
+    "part0-intro/0-4-safety.md",
+  ] },
+  { "第1部 電気の基礎" = [
+    "part1-basics/index.md",
+    "part1-basics/1-1-ohm.md",
+    "part1-basics/1-2-divider.md",
+    "part1-basics/1-3-capacitor.md",
+    "part1-basics/1-4-diode-led.md",
+    "part1-basics/1-5-mosfet.md",
+    "part1-basics/1-6-datasheet.md",
+    "part1-basics/1-7-spice.md",
+  ] },
+  { "第2部 KiCad 入門" = [
+    "part2-kicad/index.md",
+    "part2-kicad/2-1-project.md",
+    "part2-kicad/2-2-schematic.md",
+    "part2-kicad/2-3-footprint.md",
+    "part2-kicad/2-4-layout.md",
+    "part2-kicad/2-5-drc.md",
+    "part2-kicad/2-6-output.md",
+    "part2-kicad/2-7-practice.md",
+  ] },
+  { "第3部 電源" = [
+    "part3-power/index.md",
+    "part3-power/3-1-battery.md",
+    "part3-power/3-2-current.md",
+    "part3-power/3-3-protection.md",
+    "part3-power/3-4-regulator.md",
+    "part3-power/3-5-domains.md",
+    "part3-power/3-6-monitor.md",
+    "part3-power/3-7-power-board.md",
+  ] },
+  { "第4部 マイコン周り" = [
+    "part4-mcu/index.md",
+    "part4-mcu/4-1-module.md",
+    "part4-mcu/4-2-level.md",
+    "part4-mcu/4-3-boot.md",
+    "part4-mcu/4-4-connector.md",
+    "part4-mcu/4-5-debug.md",
+    "part4-mcu/4-6-main-board.md",
+  ] },
+  { "第5部 センサ" = [
+    "part5-sensors/index.md",
+    "part5-sensors/5-1-ir-receiver.md",
+    "part5-sensors/5-2-many-inputs.md",
+    "part5-sensors/5-3-ir-ring.md",
+    "part5-sensors/5-4-line.md",
+    "part5-sensors/5-5-ball-hold.md",
+    "part5-sensors/5-6-imu.md",
+    "part5-sensors/5-7-camera.md",
+  ] },
+  { "第6部 モータ" = [
+    "part6-motors/index.md",
+    "part6-motors/6-1-dc-motor.md",
+    "part6-motors/6-2-h-bridge.md",
+    "part6-motors/6-3-pwm.md",
+    "part6-motors/6-4-noise.md",
+    "part6-motors/6-5-motor-board.md",
+    "part6-motors/6-6-dribbler.md",
+  ] },
+  { "第7部 キッカー" = [
+    "part7-kicker/index.md",
+    "part7-kicker/7-1-solenoid.md",
+    "part7-kicker/7-2-boost.md",
+    "part7-kicker/7-3-discharge.md",
+    "part7-kicker/7-4-safety.md",
+    "part7-kicker/7-5-kicker-board.md",
+  ] },
+  { "第8部 基板の分け方と配線" = [
+    "part8-system/index.md",
+    "part8-system/8-1-split.md",
+    "part8-system/8-2-bus.md",
+    "part8-system/8-3-harness.md",
+    "part8-system/8-4-layout.md",
+  ] },
+  { "第9部 発注・実装・検査" = [
+    "part9-build/index.md",
+    "part9-build/9-1-order.md",
+    "part9-build/9-2-solder.md",
+    "part9-build/9-3-first-power.md",
+    "part9-build/9-4-debug.md",
+    "part9-build/9-5-inspection.md",
+  ] },
+  { "ハンズオン" = [
+    "handson/index.md",
+    "handson/h1.md",
+    "handson/h2.md",
+    "handson/h3.md",
+    "handson/h4.md",
+    "handson/h5.md",
+    "handson/h6.md",
+    "handson/h7.md",
+    "handson/h8.md",
+  ] },
+  { "計算ツール" = "tools/index.md" },
+  { "付録" = [
+    "appendix/kicad-files.md",
+    "appendix/parts.md",
+    "appendix/glossary.md",
+    "appendix/links.md",
+    "appendix/team-repo.md",
+  ] },
+]
+
+extra_css = ["stylesheets/extra.css", "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"]
+extra_javascript = [
+  "javascripts/katex.js",
+  "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js",
+  "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js",
+  "javascripts/calc.js",
+]
+
+[project.theme]
+language = "ja"
+features = [
+  "content.code.annotate",
+  "content.code.copy",
+  "content.tabs.link",
+  "content.tooltips",
+  "navigation.footer",
+  "navigation.indexes",
+  "navigation.path",
+  "navigation.sections",
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+  "toc.follow",
+]
+
+[project.theme.font]
+text = "BIZ UDPGothic"
+code = "BIZ UDGothic"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme)"
+toggle.icon = "lucide/sun-moon"
+toggle.name = "ライトモードにする"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "teal"
+accent = "orange"
+toggle.icon = "lucide/sun"
+toggle.name = "ダークモードにする"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "teal"
+accent = "orange"
+toggle.icon = "lucide/moon"
+toggle.name = "システムの設定にあわせる"
+
+[project.markdown_extensions]
+abbr = {}
+admonition = {}
+attr_list = {}
+def_list = {}
+footnotes = {}
+md_in_html = {}
+tables = {}
+toc.permalink = true
+pymdownx.arithmatex.generic = true
+pymdownx.betterem = {}
+pymdownx.caret = {}
+pymdownx.details = {}
+pymdownx.highlight.anchor_linenums = true
+pymdownx.highlight.line_spans = "__span"
+pymdownx.highlight.pygments_lang_class = true
+pymdownx.inlinehilite = {}
+pymdownx.keys = {}
+pymdownx.mark = {}
+pymdownx.smartsymbols = {}
+pymdownx.superfences.custom_fences = [
+  { name = "mermaid", class = "mermaid", format = "pymdownx.superfences.fence_code_format" },
+]
+pymdownx.tabbed.alternate_style = true
+pymdownx.tasklist.custom_checkbox = true
+pymdownx.tilde = {}

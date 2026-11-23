@@ -1,0 +1,36 @@
+# サイトのビルド結果
+site/
+.cache/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# KiCad の一時ファイル・バックアップ
+*-backups/
+*.lck
+_autosave-*
+\#auto_saved_files#
+fp-info-cache
+*.kicad_prl
+~*.kicad_*
+
+# 製造データ（GitHub Actions で作る。リポジトリには入れない）
+gerbers/
+*.gbr
+*.gbrjob
+*.drl
+*-gerbers.zip
+*-drc.json
+*-erc.json
+
+# 自チームの情報（公開リポジトリには置かない）
+team/
+private/
+.private-words
+
+# OS
+.DS_Store
+Thumbs.db

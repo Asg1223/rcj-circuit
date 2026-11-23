@@ -1,0 +1,10 @@
+/* 図を見やすく */
+.md-typeset img.schem { background: #fff; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 4px; }
+.md-typeset img.board { background: #fff; border-radius: 4px; max-width: 100%; }
+.md-typeset table:not([class]) th { white-space: nowrap; }
+/* 計算ツール */
+.calc { border: 1px solid var(--md-default-fg-color--lightest); border-radius: 6px; padding: .6rem 1rem; margin: 1rem 0; }
+.calc label { display: inline-block; min-width: 13em; }
+.calc input, .calc select { width: 8em; padding: .1rem .3rem; margin: .15rem 0; border: 1px solid var(--md-default-fg-color--lighter); border-radius: 3px; background: var(--md-default-bg-color); color: var(--md-default-fg-color); }
+.calc .out { font-weight: bold; margin-top: .4rem; }
+.calc .warn { color: #c62828; }

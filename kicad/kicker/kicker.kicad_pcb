@@ -9861,7 +9861,7 @@
 		(uuid "4e418c96-03e0-47fe-9d2a-f0bd3a39d502")
 		(hatch edge 0.5)
 		(connect_pads
-			(clearance 0.6)
+			(clearance 0.25)
 		)
 		(min_thickness 0.25)
 		(fill yes
@@ -10621,7 +10621,7 @@
 		(uuid "2039e8e2-1165-4406-ab96-979699356758")
 		(hatch edge 0.5)
 		(connect_pads
-			(clearance 0.6)
+			(clearance 0.25)
 		)
 		(min_thickness 0.25)
 		(fill yes
